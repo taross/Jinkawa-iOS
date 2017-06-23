@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBAction func startButtonDidTapped(_ sender: Any) {
+        performSegue(withIdentifier: "showTabView", sender: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
