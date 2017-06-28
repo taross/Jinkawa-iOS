@@ -2,20 +2,39 @@
 //  EventViewController.swift
 //  Jinkawa-iOS
 //
-//  Created by Taro Sato on 2017/06/27.
+//  Created by Taro Sato on 2017/06/28.
 //  Copyright © 2017年 Taro Sato. All rights reserved.
 //
 
 import UIKit
 
-class EventViewController: UIViewController {
+class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    @IBOutlet weak var eventListView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let eventList = view.viewWithTag(1)!
         
+        eventListView.delegate = self
+        eventListView.dataSource = self
+        
+        
+    eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventItem", for: indexPath) as! EventItemViewCell
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
