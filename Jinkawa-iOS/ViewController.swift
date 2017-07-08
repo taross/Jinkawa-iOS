@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        let event = Event(eventName: "testName2", updateAt: "2:00", description: "testDescription")
+        
     }
 
     override func didReceiveMemoryWarning() {
