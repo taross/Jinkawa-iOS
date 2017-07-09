@@ -14,6 +14,11 @@
 		556A29D61EFCD8B500FC82E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556A29D41EFCD8B500FC82E1 /* LaunchScreen.storyboard */; };
 		556A29E11EFCD8B500FC82E1 /* Jinkawa_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A29E01EFCD8B500FC82E1 /* Jinkawa_iOSTests.swift */; };
 		556A29EC1EFCD8B500FC82E1 /* Jinkawa_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A29EB1EFCD8B500FC82E1 /* Jinkawa_iOSUITests.swift */; };
+		55C99F831F11BDA40089851A /* EventItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F821F11BDA40089851A /* EventItemViewCell.swift */; };
+		55C99F871F11BDB20089851A /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F841F11BDB20089851A /* EventModel.swift */; };
+		55C99F881F11BDB20089851A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F851F11BDB20089851A /* EventViewController.swift */; };
+		55C99F891F11BDB20089851A /* EventItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C99F861F11BDB20089851A /* EventItemViewCell.xib */; };
+		55C99F8C1F11BE200089851A /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C99F8B1F11BE200089851A /* NCMB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		556A29E71EFCD8B500FC82E1 /* Jinkawa-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jinkawa-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556A29EB1EFCD8B500FC82E1 /* Jinkawa_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jinkawa_iOSUITests.swift; sourceTree = "<group>"; };
 		556A29ED1EFCD8B500FC82E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C99F821F11BDA40089851A /* EventItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventItemViewCell.swift; sourceTree = "<group>"; };
+		55C99F841F11BDB20089851A /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		55C99F851F11BDB20089851A /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		55C99F861F11BDB20089851A /* EventItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventItemViewCell.xib; sourceTree = "<group>"; };
+		55C99F8B1F11BE200089851A /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = Carthage/Build/iOS/NCMB.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C99F8C1F11BE200089851A /* NCMB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 				556A29DF1EFCD8B500FC82E1 /* Jinkawa-iOSTests */,
 				556A29EA1EFCD8B500FC82E1 /* Jinkawa-iOSUITests */,
 				556A29C91EFCD8B500FC82E1 /* Products */,
+				55C99F8A1F11BE200089851A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +109,10 @@
 		556A29CA1EFCD8B500FC82E1 /* Jinkawa-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				55C99F8F1F1237BD0089851A /* Model */,
+				55C99F901F1237CF0089851A /* View */,
+				55C99F8E1F1237AE0089851A /* Controller */,
 				556A29CB1EFCD8B500FC82E1 /* AppDelegate.swift */,
-				556A29CD1EFCD8B500FC82E1 /* ViewController.swift */,
 				556A29CF1EFCD8B500FC82E1 /* Main.storyboard */,
 				556A29D21EFCD8B500FC82E1 /* Assets.xcassets */,
 				556A29D41EFCD8B500FC82E1 /* LaunchScreen.storyboard */,
@@ -125,6 +139,40 @@
 			path = "Jinkawa-iOSUITests";
 			sourceTree = "<group>";
 		};
+		55C99F8A1F11BE200089851A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C99F8B1F11BE200089851A /* NCMB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C99F8E1F1237AE0089851A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				556A29CD1EFCD8B500FC82E1 /* ViewController.swift */,
+				55C99F851F11BDB20089851A /* EventViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		55C99F8F1F1237BD0089851A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55C99F841F11BDB20089851A /* EventModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		55C99F901F1237CF0089851A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55C99F821F11BDA40089851A /* EventItemViewCell.swift */,
+				55C99F861F11BDB20089851A /* EventItemViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +183,7 @@
 				556A29C41EFCD8B500FC82E1 /* Sources */,
 				556A29C51EFCD8B500FC82E1 /* Frameworks */,
 				556A29C61EFCD8B500FC82E1 /* Resources */,
+				55C99F8D1F11BE460089851A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -237,6 +286,7 @@
 			files = (
 				556A29D61EFCD8B500FC82E1 /* LaunchScreen.storyboard in Resources */,
 				556A29D31EFCD8B500FC82E1 /* Assets.xcassets in Resources */,
+				55C99F891F11BDB20089851A /* EventItemViewCell.xib in Resources */,
 				556A29D11EFCD8B500FC82E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,13 +307,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55C99F8D1F11BE460089851A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/NCMB.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		556A29C41EFCD8B500FC82E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C99F881F11BDB20089851A /* EventViewController.swift in Sources */,
 				556A29CE1EFCD8B500FC82E1 /* ViewController.swift in Sources */,
 				556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */,
+				55C99F871F11BDB20089851A /* EventModel.swift in Sources */,
+				55C99F831F11BDA40089851A /* EventItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +486,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8MZ6625L9H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Jinkawa-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sato.Jinkawa-iOS";
@@ -429,6 +503,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8MZ6625L9H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Jinkawa-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sato.Jinkawa-iOS";
@@ -514,6 +592,7 @@
 				556A29F21EFCD8B500FC82E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556A29F31EFCD8B500FC82E1 /* Build configuration list for PBXNativeTarget "Jinkawa-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +601,7 @@
 				556A29F51EFCD8B500FC82E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556A29F61EFCD8B500FC82E1 /* Build configuration list for PBXNativeTarget "Jinkawa-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +610,7 @@
 				556A29F81EFCD8B500FC82E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
