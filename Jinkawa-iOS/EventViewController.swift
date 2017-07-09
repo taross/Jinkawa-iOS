@@ -18,9 +18,9 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         eventListView.delegate = self
         eventListView.dataSource = self
         
-        EventModel.sharedManager.loadEventList()
+        EventModel.sharedManager.loadList()
         
-        self.eventList = EventModel.sharedManager.getEventList()
+        self.eventList = EventModel.sharedManager.getList()
         
     eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         
@@ -43,7 +43,10 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventItem", for: indexPath) as! EventItemViewCell
         
-        cell.title = eventList[indexPath]
+        cell.title.text = eventList[indexPath.row].object(forKey: "event_name") as? String
+        cell.date.text = eventList[indexPath.row].object(forKey: "day") as? String
+        cell.location.text = eventList[indexPath.row].object(forKey: "location") as? String
+        cell.publisher.text = eventList[indexPath.row].object(forKey: "event_department_name") as? String
         
         return cell
     }
