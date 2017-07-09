@@ -18,9 +18,9 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         eventListView.delegate = self
         eventListView.dataSource = self
         
-        EventModel.sharedManager.loadEventList()
+        EventModel.sharedManager.loadList()
         
-        self.eventList = EventModel.sharedManager.getEventList()
+        self.eventList = EventModel.sharedManager.getList()
         
     eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         

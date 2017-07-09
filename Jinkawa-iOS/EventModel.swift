@@ -21,7 +21,7 @@ class EventModel: NSObject{
     
     }
     
-    func loadEventList(){
+    func loadList(){
         let query = NCMBQuery(className: "Event")
         var result:[NCMBObject] = []
         do{
@@ -37,10 +37,9 @@ class EventModel: NSObject{
         }
     }
     
-    func getEventList()->[NCMBObject]{
+    func getList()->[NCMBObject]{
         return self.eventList
     }
-
 }
 
 struct Event{

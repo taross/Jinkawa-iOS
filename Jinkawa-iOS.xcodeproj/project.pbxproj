@@ -19,6 +19,10 @@
 		55C99F881F11BDB20089851A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F851F11BDB20089851A /* EventViewController.swift */; };
 		55C99F891F11BDB20089851A /* EventItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C99F861F11BDB20089851A /* EventItemViewCell.xib */; };
 		55C99F8C1F11BE200089851A /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C99F8B1F11BE200089851A /* NCMB.framework */; };
+		55C99F951F12692A0089851A /* InfomationItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F931F12692A0089851A /* InfomationItemViewCell.swift */; };
+		55C99F961F12692A0089851A /* InfomationItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C99F941F12692A0089851A /* InfomationItemViewCell.xib */; };
+		55C99F981F1269570089851A /* InfomationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F971F1269570089851A /* InfomationModel.swift */; };
+		55C99F9A1F126E6D0089851A /* InfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F991F126E6D0089851A /* InfomationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		55C99F851F11BDB20089851A /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		55C99F861F11BDB20089851A /* EventItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventItemViewCell.xib; sourceTree = "<group>"; };
 		55C99F8B1F11BE200089851A /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = Carthage/Build/iOS/NCMB.framework; sourceTree = "<group>"; };
+		55C99F931F12692A0089851A /* InfomationItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomationItemViewCell.swift; sourceTree = "<group>"; };
+		55C99F941F12692A0089851A /* InfomationItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfomationItemViewCell.xib; sourceTree = "<group>"; };
+		55C99F971F1269570089851A /* InfomationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomationModel.swift; sourceTree = "<group>"; };
+		55C99F991F126E6D0089851A /* InfomationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 			children = (
 				556A29CD1EFCD8B500FC82E1 /* ViewController.swift */,
 				55C99F851F11BDB20089851A /* EventViewController.swift */,
+				55C99F991F126E6D0089851A /* InfomationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				55C99F841F11BDB20089851A /* EventModel.swift */,
+				55C99F971F1269570089851A /* InfomationModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -169,6 +179,8 @@
 			children = (
 				55C99F821F11BDA40089851A /* EventItemViewCell.swift */,
 				55C99F861F11BDB20089851A /* EventItemViewCell.xib */,
+				55C99F931F12692A0089851A /* InfomationItemViewCell.swift */,
+				55C99F941F12692A0089851A /* InfomationItemViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -284,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C99F961F12692A0089851A /* InfomationItemViewCell.xib in Resources */,
 				556A29D61EFCD8B500FC82E1 /* LaunchScreen.storyboard in Resources */,
 				556A29D31EFCD8B500FC82E1 /* Assets.xcassets in Resources */,
 				55C99F891F11BDB20089851A /* EventItemViewCell.xib in Resources */,
@@ -333,7 +346,10 @@
 				556A29CE1EFCD8B500FC82E1 /* ViewController.swift in Sources */,
 				556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */,
 				55C99F871F11BDB20089851A /* EventModel.swift in Sources */,
+				55C99F9A1F126E6D0089851A /* InfomationViewController.swift in Sources */,
+				55C99F981F1269570089851A /* InfomationModel.swift in Sources */,
 				55C99F831F11BDA40089851A /* EventItemViewCell.swift in Sources */,
+				55C99F951F12692A0089851A /* InfomationItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
