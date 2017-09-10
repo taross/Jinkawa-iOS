@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5515AC191F1770ED00F62B9A /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515AC181F1770ED00F62B9A /* UserState.swift */; };
 		556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A29CB1EFCD8B500FC82E1 /* AppDelegate.swift */; };
 		556A29CE1EFCD8B500FC82E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A29CD1EFCD8B500FC82E1 /* ViewController.swift */; };
 		556A29D11EFCD8B500FC82E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556A29CF1EFCD8B500FC82E1 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5515AC181F1770ED00F62B9A /* UserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 		556A29C81EFCD8B500FC82E1 /* Jinkawa-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jinkawa-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556A29CB1EFCD8B500FC82E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556A29CD1EFCD8B500FC82E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				556A29CD1EFCD8B500FC82E1 /* ViewController.swift */,
 				55C99F851F11BDB20089851A /* EventViewController.swift */,
 				55C99F991F126E6D0089851A /* InfomationViewController.swift */,
+				5515AC181F1770ED00F62B9A /* UserState.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5515AC191F1770ED00F62B9A /* UserState.swift in Sources */,
 				55C99F881F11BDB20089851A /* EventViewController.swift in Sources */,
 				556A29CE1EFCD8B500FC82E1 /* ViewController.swift in Sources */,
 				556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */,
