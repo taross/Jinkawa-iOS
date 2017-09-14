@@ -9,7 +9,7 @@
 import UIKit
 import NCMB
 
-class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var eventListView: UITableView!
     private var eventList:[NCMBObject] = []
     
@@ -22,13 +22,13 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         self.eventList = EventModel.sharedManager.getList()
         
-    eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
+        eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toEventDetail", sender: nil)
+        performSegue(withIdentifier: "toEventDetail", sender: eventList[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +54,13 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toEventDetail"{
+            let eventDetailViewController = segue.destination as! EventDetailViewController
+            eventDetailViewController.event = sender as! NCMBObject
+        }
     }
     
     /*
