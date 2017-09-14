@@ -11,16 +11,13 @@ import NCMB
 
 class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var eventListView: UITableView!
-    private var eventList:[NCMBObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         eventListView.delegate = self
         eventListView.dataSource = self
         
-        EventModel.sharedManager.loadList()
-        
-        self.eventList = EventModel.sharedManager.getList()
+        EventManager.sharedInstance.loadList()
         
         eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         
@@ -28,11 +25,11 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toEventDetail", sender: eventList[indexPath.row])
+        performSegue(withIdentifier: "toEventDetail", sender: EventManager.sharedInstance.getList()[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.eventList.count
+        return EventManager.sharedInstance.getList().count
         
     }
     
@@ -42,11 +39,12 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventItem", for: indexPath) as! EventItemViewCell
+        let event = EventManager.sharedInstance.getList()[indexPath.row]
         
-        cell.title.text = eventList[indexPath.row].object(forKey: "event_name") as? String
-        cell.date.text = eventList[indexPath.row].object(forKey: "day") as? String
-        cell.location.text = eventList[indexPath.row].object(forKey: "location") as? String
-        cell.publisher.text = eventList[indexPath.row].object(forKey: "event_department_name") as? String
+        cell.title.text = event.name
+        cell.date.text = event.day
+        cell.location.text = event.location
+        cell.publisher.text = event.departmentName
         
         return cell
     }
@@ -59,7 +57,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toEventDetail"{
             let eventDetailViewController = segue.destination as! EventDetailViewController
-            eventDetailViewController.event = sender as! NCMBObject
+            eventDetailViewController.event = sender as! Event
         }
     }
     

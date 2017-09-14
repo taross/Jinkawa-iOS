@@ -11,23 +11,21 @@ import NCMB
 
 class EventDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var event:NCMBObject = NCMBObject() // イベントオブジェクトの保持
-    let detailList:[String] = [
-        "event_name",
-        "event_department_name",
-        "day",
-        "location",
-        "description"
-    ]
+    var event:Event = Event() // イベントオブジェクトの保持
+    var detailList:[String] = []
     
     @IBOutlet weak var detailTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(event)
+        print(event.name)
         
         detailTable.delegate = self
         detailTable.dataSource = self
+        
+        detailList.append(event.name)
+        detailList.append(event.day)
+        detailList.append(event.location)
         
         // Do any additional setup after loading the view.
         detailTable.register(UINib(nibName:"EventDetailTableViewCell", bundle:nil), forCellReuseIdentifier: "detailCell")
@@ -49,8 +47,8 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! EventDetailTableViewCell
-        cell.title.text = event.object(forKey: detailList[indexPath.row]) as? String
-        
+        cell.title.text = detailList[indexPath.row]
+
         return cell
     }
 
