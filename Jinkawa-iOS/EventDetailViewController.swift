@@ -29,6 +29,15 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
         
         // Do any additional setup after loading the view.
         detailTable.register(UINib(nibName:"EventDetailTableViewCell", bundle:nil), forCellReuseIdentifier: "detailCell")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+                                                            target: self,
+                                                            action: #selector(toParticipantListView))
+        navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
+    
+    func toParticipantListView(){
+        performSegue(withIdentifier: "toParticipantList", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +59,17 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
         cell.title.text = detailList[indexPath.row]
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toEntry" {
+            let entryViewController = segue.destination as! EntryViewController
+            entryViewController.event_id = event.id
+        }
+        if segue.identifier == "toParticipantList" {
+            let participantViewController = segue.destination as! PartisipantViewController
+            participantViewController.event_id = event.id
+        }
     }
 
 

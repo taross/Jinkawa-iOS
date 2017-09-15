@@ -17,6 +17,7 @@ class Event: NSObject{
     let day: String
     let location: String
     let departmentName: String
+    let id: String
     
     override init(){
         name = ""
@@ -25,6 +26,7 @@ class Event: NSObject{
         day = ""
         location = ""
         departmentName = ""
+        id = ""
     }
     
     init(event: NCMBObject) {
@@ -34,6 +36,7 @@ class Event: NSObject{
         day = event.object(forKey: "day") as! String
         location = event.object(forKey: "location") as! String
         departmentName = event.object(forKey: "event_department_name") as! String
+        id = event.object(forKey: "objectId") as! String
     }
     
     func save(){

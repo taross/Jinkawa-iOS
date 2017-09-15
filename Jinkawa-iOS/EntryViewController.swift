@@ -10,6 +10,8 @@ import UIKit
 import Eureka
 
 class EntryViewController: FormViewController {
+    var event_id = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         form
@@ -69,26 +71,27 @@ class EntryViewController: FormViewController {
         // Get the value of all rows which have a Tag assigned
         let values = form.values()
         
-        let birthday = DateFormatter.localizedString(from: values["BirthdayRowTag"] as! Date,
-                                                     dateStyle: .short,
-                                                     timeStyle: .none)
-        let email = values["EmailRowTag"] as! String
-        //        let password = values["PasswordRowTag"] as! String
-        let location = values["LocationRowTag"] as! String
+        let gender:String = values["GenderRowTag"] as! String
+        let age:Int = values["AgeRowTag"] as! Int
+        let tell:String = values["PhoneRowTag"] as! String
+        let address:String = values["AddressRowTag"] as! String
         
-        let message =
-            "Name:" + name + "\n" +
-                "Birthday:" + birthday + "\n\n" +
-                "Email:" + email + "\n" +
-                "Password:" + "●●●●●●" + "\n\n" +
-                "Location:" + location
+        let message: String =
+            "名前:" + name + "\n" +
+                "性別:" + gender + "\n\n" +
+                "年齢:" + age.description + "\n" +
+                "電話番号:" + tell + "\n" +
+                "住所:" + address
         
-        let alert = UIAlertController(title: "Row values",
+        let alert = UIAlertController(title: "この内容で申し込みます",
                                       message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK",
                                       style: .default,
-                                      handler: nil))
+                                      handler: {(UIAlertAction)-> Void in
+                                        let participant = Participant(name: name, gender: gender, age: age.description, tell: tell, address: address, event_id:self.event_id)
+                                        participant.save()
+        }))
         present(alert, animated: true, completion: nil)
     }
 }

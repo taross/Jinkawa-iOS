@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 import NCMB
 
-class ParticipantModel: NSObject{
+class ParticipantManager: NSObject{
     
-    static let sharedManager = ParticipantModel()
+    static let sharedInstance = ParticipantManager()
     private var participantList:[Participant] = []
     
     
@@ -22,7 +22,7 @@ class ParticipantModel: NSObject{
     }
     
     func loadList(){
-        let query = NCMBQuery(className: "Participant")
+        let query = NCMBQuery(className: "Participants")
         var result:[NCMBObject] = []
         do{
             try result = query?.findObjects() as! [NCMBObject]
@@ -41,6 +41,10 @@ class ParticipantModel: NSObject{
     
     func getList()->[Participant]{
         return self.participantList
+    }
+    
+    func getList(event_id: String)->[Participant]{
+        return self.getList().filter{$0.event_id == event_id}
     }
 }
 
