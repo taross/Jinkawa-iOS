@@ -39,6 +39,16 @@ class Event: NSObject{
         id = event.object(forKey: "objectId") as! String
     }
     
+    init(name: String, descriptionText: String, day: String, location: String, departmentName:String) {
+        self.name = name
+        self.updateDate = String(describing: Date())
+        self.descriptionText = descriptionText
+        self.day = day
+        self.location = location
+        self.departmentName = departmentName
+        self.id = ""
+    }
+    
     func save(){
         let eventObject = NCMBObject(className: "Event")
         eventObject?.setObject(name, forKey: "event_name")

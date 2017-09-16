@@ -21,7 +21,16 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+                                                            target: self,
+                                                            action: #selector(toEventCreateView))
+        navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func toEventCreateView(){
+        performSegue(withIdentifier: "toEventCreate", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

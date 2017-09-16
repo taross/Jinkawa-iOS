@@ -339,6 +339,24 @@
             </objects>
             <point key="canvasLocation" x="914" y="144"/>
         </scene>
+        <!--Event Create View Controller-->
+        <scene sceneID="FVW-Sj-Df2">
+            <objects>
+                <viewController id="Y9a-d8-kb5" customClass="EventCreateViewController" customModule="Jinkawa_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Jw-eg-yh1"/>
+                        <viewControllerLayoutGuide type="bottom" id="lNV-FC-Wh3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pGR-Xt-cCy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CnS-M0-NUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4121" y="-1332"/>
+        </scene>
         <!--イベント-->
         <scene sceneID="mbg-aH-j2z">
             <objects>
@@ -373,6 +391,7 @@
                     <connections>
                         <outlet property="eventListView" destination="IlL-RS-a3p" id="Pvy-fP-8ym"/>
                         <segue destination="qvG-28-qwA" kind="show" identifier="toEventDetail" id="PgW-yj-S1g"/>
+                        <segue destination="Y9a-d8-kb5" kind="show" identifier="toEventCreate" id="oOQ-vC-9we"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8d-ad-1S6" userLabel="First Responder" sceneMemberID="firstResponder"/>
