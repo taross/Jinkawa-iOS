@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 import NCMB
 
-class InfomationModel: NSObject{
+class InformationManager: NSObject{
     
-    static let sharedManager = InfomationModel()
-    private var infomationList:[NCMBObject] = []
+    static let sharedInstance = InformationManager()
+    private var informationList:[Information] = []
     
     
     private override init() {
@@ -32,12 +32,14 @@ class InfomationModel: NSObject{
         }
         
         if result.count > 0 {
-            self.infomationList = result
+            result.forEach{ obj in
+                self.informationList.append(Information(information: obj))
+            }
             print("お知らせリストが更新されました")
         }
     }
     
-    func getList()->[NCMBObject]{
-        return self.infomationList
+    func getList()->[Information]{
+        return self.informationList
     }
 }

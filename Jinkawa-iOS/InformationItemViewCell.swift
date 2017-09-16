@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfomationItemViewCell: UITableViewCell {
+class InformationItemViewCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var date: UILabel!

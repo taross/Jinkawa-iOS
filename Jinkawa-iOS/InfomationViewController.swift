@@ -9,39 +9,38 @@
 import UIKit
 import NCMB
 
-class InfomationViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class InformationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    @IBOutlet weak var infomationListView: UITableView!
-    private var infomationList:[NCMBObject] = []
+    @IBOutlet weak var informationListView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        informationListView.delegate = self
+        informationListView.dataSource = self
         
-        infomationListView.delegate = self
-        infomationListView.dataSource = self
+        InformationManager.sharedInstance.loadList()
         
-        InfomationModel.sharedManager.loadList()
-        infomationList = InfomationModel.sharedManager.getList()
+        informationListView.register(UINib(nibName:"InformationItemViewCell", bundle:nil), forCellReuseIdentifier: "informationItem")
         
-        print(infomationList)
-        
-        infomationListView.register(UINib(nibName:"InfomationItemViewCell", bundle: nil), forCellReuseIdentifier: "infomationItem")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+                                                            target: self,
+                                                            action: #selector(toEventCreateView))
+        navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func toEventCreateView(){
+        performSegue(withIdentifier: "toInformationCreate", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Hi")
+        //performSegue(withIdentifier: "toEventDetail", sender: EventManager.sharedInstance.getList()[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.infomationList.count
+        return InformationManager.sharedInstance.getList().count
         
     }
     
@@ -50,15 +49,24 @@ class InfomationViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "infomationItem", for: indexPath) as! InfomationItemViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "informationItem", for: indexPath) as! InformationItemViewCell
+        let information:Information = InformationManager.sharedInstance.getList()[indexPath.row]
         
-        cell.title.text = infomationList[indexPath.row].object(forKey: "title") as? String
-        cell.date.text = infomationList[indexPath.row].object(forKey: "date") as? String
-        cell.publisher.text = infomationList[indexPath.row].object(forKey: "department_name") as? String
+        cell.title.text = information.title
+        cell.date.text = information.date
+        cell.publisher.text = information.departmentName
         
         return cell
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
     /*
      // MARK: - Navigation
