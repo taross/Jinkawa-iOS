@@ -68,7 +68,7 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
         }
         if segue.identifier == "toParticipantList" {
             let participantViewController = segue.destination as! PartisipantViewController
-            participantViewController.event_id = event.id
+            participantViewController.event = event
         }
     }
 

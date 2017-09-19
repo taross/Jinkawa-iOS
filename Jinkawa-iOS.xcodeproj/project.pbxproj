@@ -33,7 +33,8 @@
 		55C99F951F12692A0089851A /* InformationItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F931F12692A0089851A /* InformationItemViewCell.swift */; };
 		55C99F961F12692A0089851A /* InformationItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C99F941F12692A0089851A /* InformationItemViewCell.xib */; };
 		55C99F981F1269570089851A /* InformationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F971F1269570089851A /* InformationManager.swift */; };
-		55C99F9A1F126E6D0089851A /* InfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F991F126E6D0089851A /* InfomationViewController.swift */; };
+		55C99F9A1F126E6D0089851A /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C99F991F126E6D0089851A /* InformationViewController.swift */; };
+		55CD50F71F6E20D8007DECB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD50F61F6E20D8007DECB8 /* LoginViewController.swift */; };
 		55DF2DD41F6CC808002491E1 /* EventCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF2DD31F6CC808002491E1 /* EventCreateViewController.swift */; };
 		55E07F851F6D4EBA0056E726 /* InformationCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E07F841F6D4EBA0056E726 /* InformationCreateViewController.swift */; };
 		55F8EE6E1F696EB600D9E64E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8EE6D1F696EB600D9E64E /* EventDetailViewController.swift */; };
@@ -90,7 +91,8 @@
 		55C99F931F12692A0089851A /* InformationItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationItemViewCell.swift; sourceTree = "<group>"; };
 		55C99F941F12692A0089851A /* InformationItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationItemViewCell.xib; sourceTree = "<group>"; };
 		55C99F971F1269570089851A /* InformationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationManager.swift; sourceTree = "<group>"; };
-		55C99F991F126E6D0089851A /* InfomationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomationViewController.swift; sourceTree = "<group>"; };
+		55C99F991F126E6D0089851A /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		55CD50F61F6E20D8007DECB8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		55DF2DD31F6CC808002491E1 /* EventCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreateViewController.swift; sourceTree = "<group>"; };
 		55E07F841F6D4EBA0056E726 /* InformationCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationCreateViewController.swift; sourceTree = "<group>"; };
 		55F8EE6D1F696EB600D9E64E /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
@@ -194,11 +196,12 @@
 				55C99F851F11BDB20089851A /* EventViewController.swift */,
 				55F8EE6D1F696EB600D9E64E /* EventDetailViewController.swift */,
 				55DF2DD31F6CC808002491E1 /* EventCreateViewController.swift */,
-				55C99F991F126E6D0089851A /* InfomationViewController.swift */,
+				55C99F991F126E6D0089851A /* InformationViewController.swift */,
 				55E07F841F6D4EBA0056E726 /* InformationCreateViewController.swift */,
 				55C3E34B1F6BE9CB0026E9EE /* PartisipantViewController.swift */,
 				55F8EE6F1F69719800D9E64E /* EntryViewController.swift */,
 				5515AC181F1770ED00F62B9A /* UserState.swift */,
+				55CD50F61F6E20D8007DECB8 /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CD50F71F6E20D8007DECB8 /* LoginViewController.swift in Sources */,
 				5515AC191F1770ED00F62B9A /* UserState.swift in Sources */,
 				55E07F851F6D4EBA0056E726 /* InformationCreateViewController.swift in Sources */,
 				55C99F881F11BDB20089851A /* EventViewController.swift in Sources */,
@@ -403,7 +407,7 @@
 				556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */,
 				55C99F871F11BDB20089851A /* EventManager.swift in Sources */,
 				559FC0931F6A535400FB5ABE /* EventDetailTableViewCell.swift in Sources */,
-				55C99F9A1F126E6D0089851A /* InfomationViewController.swift in Sources */,
+				55C99F9A1F126E6D0089851A /* InformationViewController.swift in Sources */,
 				55F8EE701F69719800D9E64E /* EntryViewController.swift in Sources */,
 				55F8EE6E1F696EB600D9E64E /* EventDetailViewController.swift in Sources */,
 				55C99F981F1269570089851A /* InformationManager.swift in Sources */,

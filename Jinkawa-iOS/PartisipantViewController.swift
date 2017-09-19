@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import NCMB
 
 class PartisipantViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     @IBOutlet weak var participantTable: UITableView!
-    var event_id:String = ""
+    var event: Event = Event()
     lazy var participantList:[Participant] = []
     
     
@@ -23,11 +24,12 @@ class PartisipantViewController: UIViewController, UITableViewDelegate, UITableV
         participantTable.dataSource = self
         
         ParticipantManager.sharedInstance.loadList()
-        participantList = ParticipantManager.sharedInstance.getList(event_id: self.event_id)
+        participantList = ParticipantManager.sharedInstance.getList(event_id: self.event.id)
         print(participantList)
         
         participantTable.register(UINib(nibName: "ParticipantTableViewCell", bundle: nil), forCellReuseIdentifier: "participantCell")
         
+        uploadCSV()
         // Do any additional setup after loading the view.
     }
 
@@ -51,6 +53,30 @@ class PartisipantViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return participantList.count;
+    }
+    
+    func uploadCSV(){
+        var data = event.name + "," + event.day + "," + event.location + "," + event.departmentName
+        data += "\r\n"
+        data += " "
+        data += "\r\n"
+        data += "氏名,年齢,性別,電話番号,住所"
+        data += "\r\n"
+        
+        participantList.forEach {
+            var sep:String  = ""
+            data += sep + $0.name
+            sep = ","
+            data += sep + $0.age
+            data += sep + $0.gender
+            data += sep + $0.tell
+            data += sep + $0.address
+            data += "\r\n"
+        }
+        
+        let file = NCMBFile.file(withName: "testSwift.csv", data: data.data(using: String.Encoding.utf16)) as! NCMBFile
+        file.save(nil)
+        print("File Saved.")
     }
     
     /*

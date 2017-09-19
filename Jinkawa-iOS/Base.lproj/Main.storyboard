@@ -35,14 +35,25 @@
                                     <action selector="startButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="kq2-u9-Q1b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqP-1g-mkR">
+                                <rect key="frame" x="236" y="617" width="123" height="30"/>
+                                <state key="normal" title="町会役員はコチラ">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2yu-wv-UVU" kind="show" id="bQl-sd-Tni"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v6b-ph-kcL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6fO-MO-pJT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D3E-dw-twv" secondAttribute="bottom" constant="86" id="UNc-AS-Mol"/>
+                            <constraint firstItem="ZqP-1g-mkR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aR6-UA-Lmd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D3E-dw-twv" secondAttribute="trailing" constant="89" id="gDf-a5-kv0"/>
                             <constraint firstItem="D3E-dw-twv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="iMq-xr-Ib5"/>
                             <constraint firstItem="D3E-dw-twv" firstAttribute="top" secondItem="v6b-ph-kcL" secondAttribute="bottom" constant="22" id="lap-x3-Txs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZqP-1g-mkR" secondAttribute="bottom" constant="20" id="o1n-d6-E36"/>
                             <constraint firstItem="v6b-ph-kcL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qMH-wl-k3y"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v6b-ph-kcL" secondAttribute="bottom" constant="170" id="sZc-P2-XZh"/>
                             <constraint firstAttribute="trailing" secondItem="v6b-ph-kcL" secondAttribute="trailing" id="vXO-DI-Q2O"/>
@@ -68,12 +79,26 @@
                     <view key="view" contentMode="scaleToFill" id="UuR-uv-Pck">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oNc-H1-Tf5">
+                                <rect key="frame" x="101" y="318" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-RL-HIo">
+                                <rect key="frame" x="164" y="381" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOW-Vp-J19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="907"/>
+            <point key="canvasLocation" x="136.80000000000001" y="905.3973013493254"/>
         </scene>
         <!--お知らせ-->
         <scene sceneID="WtC-dH-08Q">
@@ -101,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpL-pG-vgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2501.5999999999999" y="142.57871064467767"/>
+            <point key="canvasLocation" x="1700" y="143"/>
         </scene>
         <!--お知らせ-->
         <scene sceneID="s1J-u4-ZUA">
@@ -126,20 +151,21 @@
                     <navigationItem key="navigationItem" title="お知らせ" id="fCX-Rf-azd"/>
                     <connections>
                         <outlet property="informationListView" destination="fx8-Kc-9yy" id="mPH-1a-xDU"/>
-                        <segue destination="5DY-SI-qys" kind="show" id="Aw6-7i-04g"/>
+                        <segue destination="5DY-SI-qys" kind="show" identifier="toInformationCreate" id="Aw6-7i-04g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMl-N9-KWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4248.8000000000002" y="142.1289355322339"/>
+            <point key="canvasLocation" x="3305" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qFQ-bR-Jwj">
             <objects>
                 <navigationController id="nhj-TR-8ut" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aWc-Rf-qXw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aWc-Rf-qXw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -151,12 +177,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDb-Rg-ZNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3362" y="143"/>
+            <point key="canvasLocation" x="2502" y="143"/>
         </scene>
         <!--お知らせ作成-->
         <scene sceneID="Urp-J7-5Rq">
             <objects>
-                <viewController id="5DY-SI-qys" userLabel="お知らせ作成" sceneMemberID="viewController">
+                <viewController id="5DY-SI-qys" userLabel="お知らせ作成" customClass="InformationCreateViewController" customModule="Jinkawa_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W5B-fP-knB"/>
                         <viewControllerLayoutGuide type="bottom" id="zO8-dU-cXb"/>
@@ -166,10 +192,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="お知らせ作成" id="jyy-hd-mtA" userLabel="お知らせ作成"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXp-eW-Vuy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4249" y="828"/>
+            <point key="canvasLocation" x="3305" y="906"/>
         </scene>
         <!--設定-->
         <scene sceneID="aaG-Ix-hiT">
@@ -224,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSl-dj-bCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="-658"/>
+            <point key="canvasLocation" x="1700" y="-658"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WBD-Zc-402">
@@ -339,6 +368,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="参加者リスト" id="C0m-L3-OQs"/>
                     <connections>
                         <outlet property="participantTable" destination="pX1-4e-Sw4" id="3eU-6o-dHz"/>
                     </connections>
@@ -386,7 +416,7 @@
             </objects>
             <point key="canvasLocation" x="914" y="144"/>
         </scene>
-        <!--Event Create View Controller-->
+        <!--イベント作成-->
         <scene sceneID="FVW-Sj-Df2">
             <objects>
                 <viewController id="Y9a-d8-kb5" customClass="EventCreateViewController" customModule="Jinkawa_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -399,10 +429,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="イベント作成" id="G1I-OD-MzN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnS-M0-NUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4121" y="-1332"/>
+            <point key="canvasLocation" x="4121" y="-1328"/>
         </scene>
         <!--イベント-->
         <scene sceneID="mbg-aH-j2z">
