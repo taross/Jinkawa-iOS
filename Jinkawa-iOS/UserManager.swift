@@ -23,6 +23,12 @@ class UserManager: NSObject{
     func setState(state:UserState){
         self.userState = state
     }
+    
+    func login(pass:String){
+        if pass == "jinkawa8855001"{
+            userState = .admin
+        }
+    }
 }
 
 enum UserState{
