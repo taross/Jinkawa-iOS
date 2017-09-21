@@ -9,30 +9,36 @@
 import UIKit
 import NCMB
 
-class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var eventListView: UITableView!
-    private var eventList:[NCMBObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         eventListView.delegate = self
         eventListView.dataSource = self
         
-        EventModel.sharedManager.loadList()
+        EventManager.sharedInstance.loadList()
         
-        self.eventList = EventModel.sharedManager.getList()
+        eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
         
-    eventListView.register(UINib(nibName:"EventItemViewCell", bundle:nil), forCellReuseIdentifier: "eventItem")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+                                                            target: self,
+                                                            action: #selector(toEventCreateView))
+        navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         // Do any additional setup after loading the view.
     }
     
+    func toEventCreateView(){
+        performSegue(withIdentifier: "toEventCreate", sender: nil)
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toEventDetail", sender: nil)
+        performSegue(withIdentifier: "toEventDetail", sender: EventManager.sharedInstance.getList()[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.eventList.count
+        return EventManager.sharedInstance.getList().count
         
     }
     
@@ -42,11 +48,12 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventItem", for: indexPath) as! EventItemViewCell
+        let event = EventManager.sharedInstance.getList()[indexPath.row]
         
-        cell.title.text = eventList[indexPath.row].object(forKey: "event_name") as? String
-        cell.date.text = eventList[indexPath.row].object(forKey: "day") as? String
-        cell.location.text = eventList[indexPath.row].object(forKey: "location") as? String
-        cell.publisher.text = eventList[indexPath.row].object(forKey: "event_department_name") as? String
+        cell.title.text = event.name
+        cell.date.text = event.day
+        cell.location.text = event.location
+        cell.publisher.text = event.departmentName
         
         return cell
     }
@@ -54,6 +61,13 @@ class EventViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toEventDetail"{
+            let eventDetailViewController = segue.destination as! EventDetailViewController
+            eventDetailViewController.event = sender as! Event
+        }
     }
     
     /*
