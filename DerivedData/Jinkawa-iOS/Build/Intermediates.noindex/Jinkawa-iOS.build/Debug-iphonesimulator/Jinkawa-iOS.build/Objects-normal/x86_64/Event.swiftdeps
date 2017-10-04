@@ -1,0 +1,337 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Event"
+provides-nominal:
+- "11Jinkawa_iOS5EventC"
+provides-member:
+- ["11Jinkawa_iOS5EventC", ""]
+provides-dynamic-lookup:
+- "day"
+- "departmentName"
+- "descriptionText"
+- "id"
+- "location"
+- "name"
+- "save"
+- "updateDate"
+depends-top-level:
+- !private "!="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "Date"
+- "Event"
+- "NCMBObject"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+- !private "print"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Date"]
+- !private ["s7CVarArgP", "NCMBObject"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "day"]
+- !private ["s7CVarArgP", "departmentName"]
+- !private ["s7CVarArgP", "descriptionText"]
+- !private ["s7CVarArgP", "id"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "location"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "object"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "saveInBackground"]
+- !private ["s7CVarArgP", "setObject"]
+- !private ["s7CVarArgP", "updateDate"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
+- !private ["s28CustomDebugStringConvertibleP", "NCMBObject"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "day"]
+- !private ["s28CustomDebugStringConvertibleP", "departmentName"]
+- !private ["s28CustomDebugStringConvertibleP", "descriptionText"]
+- !private ["s28CustomDebugStringConvertibleP", "id"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "location"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "object"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "saveInBackground"]
+- !private ["s28CustomDebugStringConvertibleP", "setObject"]
+- !private ["s28CustomDebugStringConvertibleP", "updateDate"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Date"]
+- !private ["s23CustomStringConvertibleP", "NCMBObject"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "day"]
+- !private ["s23CustomStringConvertibleP", "departmentName"]
+- !private ["s23CustomStringConvertibleP", "descriptionText"]
+- !private ["s23CustomStringConvertibleP", "id"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "location"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "object"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "saveInBackground"]
+- !private ["s23CustomStringConvertibleP", "setObject"]
+- !private ["s23CustomStringConvertibleP", "updateDate"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["10Foundation4DateV", "init"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Date"]
+- !private ["s9EquatableP", "NCMBObject"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "day"]
+- !private ["s9EquatableP", "departmentName"]
+- !private ["s9EquatableP", "descriptionText"]
+- !private ["s9EquatableP", "id"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "location"]
+- !private ["s9EquatableP", "name"]
+- !private ["s9EquatableP", "object"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "saveInBackground"]
+- !private ["s9EquatableP", "setObject"]
+- !private ["s9EquatableP", "updateDate"]
+- ["s9EquatableP", ""]
+- !private ["11Jinkawa_iOS5EventC", "Date"]
+- ["11Jinkawa_iOS5EventC", "NCMBObject"]
+- ["11Jinkawa_iOS5EventC", "String"]
+- ["11Jinkawa_iOS5EventC", "day"]
+- ["11Jinkawa_iOS5EventC", "deinit"]
+- ["11Jinkawa_iOS5EventC", "departmentName"]
+- ["11Jinkawa_iOS5EventC", "descriptionText"]
+- ["11Jinkawa_iOS5EventC", "id"]
+- ["11Jinkawa_iOS5EventC", "init"]
+- ["11Jinkawa_iOS5EventC", "location"]
+- ["11Jinkawa_iOS5EventC", "name"]
+- !private ["11Jinkawa_iOS5EventC", "print"]
+- ["11Jinkawa_iOS5EventC", "save"]
+- ["11Jinkawa_iOS5EventC", "updateDate"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Date"]
+- !private ["s8HashableP", "NCMBObject"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "day"]
+- !private ["s8HashableP", "departmentName"]
+- !private ["s8HashableP", "descriptionText"]
+- !private ["s8HashableP", "id"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "location"]
+- !private ["s8HashableP", "name"]
+- !private ["s8HashableP", "object"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "saveInBackground"]
+- !private ["s8HashableP", "setObject"]
+- !private ["s8HashableP", "updateDate"]
+- ["s8HashableP", ""]
+- !private ["6Eureka18InputTypeInitiableP", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So10NCMBObjectC", "init"]
+- !private ["So10NCMBObjectC", "object"]
+- !private ["So10NCMBObjectC", "saveInBackground"]
+- !private ["So10NCMBObjectC", "setObject"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Date"]
+- ["So8NSObjectC", "NCMBObject"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "day"]
+- ["So8NSObjectC", "departmentName"]
+- ["So8NSObjectC", "descriptionText"]
+- ["So8NSObjectC", "id"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "location"]
+- ["So8NSObjectC", "name"]
+- !private ["So8NSObjectC", "object"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "save"]
+- !private ["So8NSObjectC", "saveInBackground"]
+- !private ["So8NSObjectC", "setObject"]
+- ["So8NSObjectC", "updateDate"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "Date"]
+- !private ["So16NSObjectProtocolP", "NCMBObject"]
+- !private ["So16NSObjectProtocolP", "String"]
+- !private ["So16NSObjectProtocolP", "day"]
+- !private ["So16NSObjectProtocolP", "departmentName"]
+- !private ["So16NSObjectProtocolP", "descriptionText"]
+- !private ["So16NSObjectProtocolP", "id"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "location"]
+- !private ["So16NSObjectProtocolP", "name"]
+- !private ["So16NSObjectProtocolP", "object"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "saveInBackground"]
+- !private ["So16NSObjectProtocolP", "setObject"]
+- !private ["So16NSObjectProtocolP", "updateDate"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NCMBObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "day"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "departmentName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "id"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "location"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "saveInBackground"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateDate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- "11Jinkawa_iOS5EventC"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "6Eureka18InputTypeInitiableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So10NCMBObjectC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/Eureka.framework/Modules/Eureka.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMB.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBACL.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/Eureka.framework/Headers/Eureka.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMB_umbrella.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBScriptService.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBFile.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBRole.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBSubclassing.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBPush.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBRelation.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBInstallation.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBUser.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBError.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBAnalytics.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBAnonymousUtils.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBConstants.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBObject.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/Eureka.framework/Headers/Eureka-Swift.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBGeoPoint.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBScript.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBRequest.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBQuery.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Headers/NCMBReachability.h"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/NCMB.framework/Modules/module.modulemap"
+- "/Users/taross/Projects/Jinkawa-iOS/Carthage/Build/iOS/Eureka.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "d6c9beba8b51c2ca30f61bc67eb0a83f"

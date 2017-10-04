@@ -1,18 +1,9 @@
 {
+  "commitish" : "v2.3.7",
   "iOS" : [
     {
-      "hash" : "1b69f9c1638092b2ea9b70f7093f4d2538231ec1a30333f8228f80f087220c51",
+      "hash" : "5952cbb6be10e7808909acfa19e187b1ff99f5f8f6e58f07100e79a49f8b6e70",
       "name" : "NCMB"
     }
-  ],
-  "commitish" : "v2.3.7",
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
-  "Mac" : [
-
   ]
 }

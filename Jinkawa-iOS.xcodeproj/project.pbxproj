@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5515AC191F1770ED00F62B9A /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515AC181F1770ED00F62B9A /* UserState.swift */; };
+		5534EFB71F84B30D00C85E5B /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5534EFB61F84B30D00C85E5B /* UserManager.swift */; };
 		556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A29CB1EFCD8B500FC82E1 /* AppDelegate.swift */; };
 		556A29CE1EFCD8B500FC82E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556A29CD1EFCD8B500FC82E1 /* ViewController.swift */; };
 		556A29D11EFCD8B500FC82E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556A29CF1EFCD8B500FC82E1 /* Main.storyboard */; };
@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5515AC181F1770ED00F62B9A /* UserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		5534EFB61F84B30D00C85E5B /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		556A29C81EFCD8B500FC82E1 /* Jinkawa-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jinkawa-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556A29CB1EFCD8B500FC82E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556A29CD1EFCD8B500FC82E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +192,7 @@
 		55C99F8E1F1237AE0089851A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5534EFB61F84B30D00C85E5B /* UserManager.swift */,
 				556A29CD1EFCD8B500FC82E1 /* ViewController.swift */,
 				55C99F851F11BDB20089851A /* EventViewController.swift */,
 				55F8EE6D1F696EB600D9E64E /* EventDetailViewController.swift */,
@@ -200,7 +201,6 @@
 				55E07F841F6D4EBA0056E726 /* InformationCreateViewController.swift */,
 				55C3E34B1F6BE9CB0026E9EE /* PartisipantViewController.swift */,
 				55F8EE6F1F69719800D9E64E /* EntryViewController.swift */,
-				5515AC181F1770ED00F62B9A /* UserState.swift */,
 				55CD50F61F6E20D8007DECB8 /* LoginViewController.swift */,
 			);
 			name = Controller;
@@ -395,7 +395,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CD50F71F6E20D8007DECB8 /* LoginViewController.swift in Sources */,
-				5515AC191F1770ED00F62B9A /* UserState.swift in Sources */,
 				55E07F851F6D4EBA0056E726 /* InformationCreateViewController.swift in Sources */,
 				55C99F881F11BDB20089851A /* EventViewController.swift in Sources */,
 				556A29CE1EFCD8B500FC82E1 /* ViewController.swift in Sources */,
@@ -404,6 +403,7 @@
 				55DF2DD41F6CC808002491E1 /* EventCreateViewController.swift in Sources */,
 				55C3E34F1F6BEA120026E9EE /* ParticipantTableViewCell.swift in Sources */,
 				559FC09A1F6AB21100FB5ABE /* Event.swift in Sources */,
+				5534EFB71F84B30D00C85E5B /* UserManager.swift in Sources */,
 				556A29CC1EFCD8B500FC82E1 /* AppDelegate.swift in Sources */,
 				55C99F871F11BDB20089851A /* EventManager.swift in Sources */,
 				559FC0931F6A535400FB5ABE /* EventDetailTableViewCell.swift in Sources */,
